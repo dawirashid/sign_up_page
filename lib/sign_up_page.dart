@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sign_up_page/sign_up_form.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({Key? key}) : super(key: key);
@@ -33,7 +34,7 @@ class _SignUpPageState extends State<SignUpPage> {
               height: 5,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 10),
+              padding: const EdgeInsets.only(left: 12),
               child: Row(
                 children: const [
                   Text(
@@ -46,7 +47,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   SizedBox(
                     width: 5,
                   ),
-                  Text(
+                  Text( // wrap with widget to add gesturedetector
                     'Log In',
                     style: TextStyle(
                       fontSize: 20,
@@ -56,6 +57,11 @@ class _SignUpPageState extends State<SignUpPage> {
                   ),
                 ],
               ),
+            ),
+            const SizedBox(height: 10,),
+            const Padding(
+              padding: EdgeInsets.only(left: 15,right: 15),
+              child: SignUpForm(),
             ),
           ],
         ),
