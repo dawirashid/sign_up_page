@@ -94,8 +94,10 @@ class _SignUpPageState extends State<SignUpPage> {
                 child: TextButton(
                   onPressed: () {},
                   child: const Text('Sign Up'),
-                  style: TextButton.styleFrom(primary: const Color(0xeb164e44),
-                    textStyle: const TextStyle(fontWeight: FontWeight.bold,fontSize: 20)
+                  style: TextButton.styleFrom(
+                    primary: const Color(0xeb164e44),
+                    textStyle: const TextStyle(
+                        fontWeight: FontWeight.bold, fontSize: 40),
                   ),
                 ),
               ),
